@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #007bff;
-    --background-color: #f8f9fa;
+    --primary-color: #041575;
+    --background-color:#e9e1e1;
     --text-color:blue;
     --white:white ;
-    --navbar-height: 60px;
+    --navbar-height: 50px;
 }
 
 /* Reset default styles */
@@ -167,3 +167,223 @@ body {
     padding: 20px;
     text-align: center;
 }
+.footer {
+    background-color: #041575; /* Dark blue background */
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 300px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us i {
+    margin-right: 8px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Quick Links Section */
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+/* Newsletter Section */
+.newsletter form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input[type="email"],
+    .newsletter button {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        border-radius: 4px;
+    }
+}
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    flex-direction: column;
+    align-items: center;
+}
+.page .search{
+    display: flex;
+    gap: 6px;
+    background-color: #ffe;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    /* border-radius: 12px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+/* how to style search input in css */
+.page .search input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgb(228, 195, 195);
+    font-size: 23px;
+    width: 100%;
+    
+    
+}
+
+.search span{
+    padding-right: 12px;
+    font-size: 23px;
+}
+
+.products{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.products .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #9181af;
+    width: 400px;
+    padding: 12px;
+    transition: 0.4s all ease-in;
+    cursor: pointer;
+
+}
+.products .card:hover{
+    transform: translateY(-8px);
+}
+
+.products .card .picture{
+    width: 100%;
+}
+
+.picture img{
+    width: 100%;
+}
+.Pname{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.desc{
+    margin-bottom: 12px;
+}
+
+.btn{
+    padding: 12px 23px;
+    cursor: pointer;
+    margin-top: 4px;
+    background-color: #21077c;
+    border: none;
+    outline: none;
+    color: white;
+    transition: 1s all ease-in;
+}
+.btn:hover{
+    background-color: #3249cc;
+}
+
